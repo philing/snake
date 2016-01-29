@@ -49,7 +49,7 @@ def add_block(scr, width, height):
       if empty:
         # if it is, replace it with a "Y" and return
       
-        scr.addch(y, x, ord("Y"), curses.color_pair(2))
+        scr.addch(y, x, ord("Y"), curses.color_pair(curses.COLOR_GREEN))
         return
   
 def snake(scr):
@@ -145,7 +145,7 @@ def snake(scr):
       
       # replace the character with a "O"
       
-      scr.addch(y, x, ord("O"), curses.color_pair(1))
+      scr.addch(y, x, ord("O"), curses.color_pair(curses.COLOR_RED))
       
       # update the screen
       
