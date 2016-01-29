@@ -47,9 +47,9 @@ def add_block(scr, width, height):
             empty = False
 
       if empty:
-        # if it is, replace it with a "Y" and return
+        # if it is, replace it with a "R" and return
       
-        scr.addch(y, x, ord("Y"), curses.color_pair(2))
+        scr.addch(y, x, ord("R"), curses.color_pair(2))
         return
   
 def snake(scr):
